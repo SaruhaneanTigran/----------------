@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content=“Десятая_лабораторная“ />
+    <meta name="keywords" content=“HTML“ />
+    <meta name="author" content=“Саруханян_Тигран_Артурович“ />
+    <link rel="shortcut icon" href="../Images/im3.png">
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css">
+    <script src="../JS/JS.js"> </script>
+    <title>Detail GARAGE</title>
+</head>
+<body class="body3">
+
+
+
+    <div class="meniu">
+        <div class="imageBox" style="color: red;"> <a href="../index.html"> <img src="../Images/logo.png"> </a> </div>
+        
+        <ul>
+            <li><a href="produs.html">О нас</a></li>
+            <li><a href="client.html">Услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li> <a  target="_blank" href="map.html">Карта проезда</a></li>
+        </ul>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="container" >
+
+    <div>     
+<div class="contact"> 
+    <h3 class="h3">Наши контакты: </h3>
+    Контактный номер: <a class="telephone-link" href="tel:079777777">079-777-777</a>  <br>
+    Адрес:  Strada Uzinelor 210/2, Chișinău, Молдова
+</div>
+</div>
+
+<br><br><br><br><br>
+
+
+<div class="form">
+<table class="форма" >
+    <td>
+        <form name="myForm" onsubmit="return validateForm()">
+
+            <fieldset> 
+                <legend> Регистрация на предзапись  </legend>
+                <p> Имя: <br> <input type="text" name="Имя" pattern="[A-Za-zА-Яа-яЁё]+$" > </p> 
+                <p> Фамилия: <br> <input type="text" name="Фамилия" pattern="^[A-Za-zА-Яа-яЁё]+$" > </p>
+                <p> Адрес электронной почты: <br>  <input type="email" name="Почта"  > </p>
+                <p> Дата рождения: <br> <input type="date" name="Дата рождения"  min="1999-12-31"  required> </p>
+                <p> Местожительство: <br> <select id="selectCity" name="Местожительство" required>
+                    <option value="" disabled selected>Выберите город</option>
+                    <!-- список городов будет заполняться с помощью JavaScript -->
+                    
+                    <br>
+                </select>  </p>
+                <p> Телефон: <br> <input type="tel" name="Телефон" pattern="0[0-9]{8}"> <br><br>
+                <input class="buton" type="reset" value="Стереть данные"> <input class="buton" type="submit" value="Отправить данные"> 
+            </fieldset>  
+        
+        </form>
+    </td>
+</table>
+</div>
+
+    </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
+  <br><br><br><br><br><br>
+        
+    
+
+
+
+
+
+</body>
+</html>

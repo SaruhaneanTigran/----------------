@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+html, body {
+        margin:0px;
+        padding:0px; 
+}
+
+
+
+.meniu{
+        margin-bottom: 0px;
+        width: 100%; 
+        height: 150px; 
+        background-position: top;
+        position: fixed;
+        background: #000000; 	
+        z-index: 9999;
+
+}
+
+.imageBox{
+        float: left;
+        margin-right: 10px;
+}
+.meniu ul{
+
+        display: flex;
+        justify-content:space-between;
+        width: 80%;
+        font-size: large;
+        margin-top: 50px;
+}
+.meniu ul li{
+        list-style: none;
+        font: bold 14px/30px Georgia, serif; 
+
+}
+
+.meniu ul li a{
+        
+        text-decoration: none; 
+        /* display: block;  */
+        /* padding: 0px 5vw 2v;  */
+        color: #FFFFFF; 
+        vertical-align: middle;	
+}
+
+.container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px; 
+        box-sizing: border-box;
+        /* border: solid; */
+        height: 150vh;
+}
+
+.video{
+        
+        width: 100%;
+        height: 100%;  
+}
+.video video{
+        width: 100%;
+
+}
+.left{
+        float: left;
+        padding-top: 200px;
+        padding-left: 50px; 
+        margin-top: 200px;
+        
+
+}
+
+.right{
+        float: right;
+        margin-top: 300px;
+        width: 550px;
+        height: 500px;
+        background-image: url('../Images/3.jpeg');
+        background-size: cover;
+    }
+
+.left2{
+        width: 40%;
+        float: left;
+        padding-top: 30px;
+        padding-left: 50px; 
+        margin-top: 200px;
+        
+
+}
+
+.right2{
+        width: 40%;
+        float: right;
+        margin-top: 70px;
+        margin-right: 30px;
+        width: 550px;
+        height: 500px;
+        background-image: url('../Images/7.jpeg');
+        background-size: cover;
+    }
+
+.body2{
+        background-image: url('../Images/1.jpeg');
+        background-size: cover;
+        
+}
+.meniu ul li:hover{
+        color: red;
+}
+
+a:hover{
+        color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+table.форма {
+        width: 30%;
+        border-color: rgb(225, 57, 57) ;
+        background-color: #000000;
+        }
+
+
+fieldset{
+        border-color: rgb(217, 76, 76) ;
+        }
+
+
+legend  {
+        text-align: center;
+        color: rgb(217, 76, 76);
+        text-shadow: -2px -1px 2px rgb(109, 107, 107)
+        }
+
+
+input   {
+        background-color: rgb(205, 205, 205);
+        }
+
+
+/*определяем стили для подсветки*/
+input:invalid {
+        border: 2px solid red;
+        }
+
+        a.telephone-link {
+                color: red(255, 0, 0); /* Цвет ссылки */
+                text-decoration: none; /* Убираем подчеркивание */
+            }
+        
+            a.telephone-link:hover {
+                text-decoration: underline; /* Подчеркивание при наведении */
+            }
+
+
+
+input.buton {
+        background-color:rgb(44, 44, 44); 
+        color: red;
+        }
+
+
+p       {
+        color: rgb(255, 255, 255);
+        }
+.form{
+        padding-left: 30px;
+}
+
+
+.body3{
+        width: 100%;
+        height: 600px;
+        background-image: url('../Images/10.jpeg');
+        background-size: cover;
+        
+}
+
+.contact{
+        margin-left: 30px;
+        width: 350px;
+        background-color: black;
+        color: rgb(217, 76, 76);
+
+}
+
+.h3{
+        color: white;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+
+
+        
+
+
+      
+      .carousel {
+        position: relative;
+        width: 90%;
+        padding: 0px 50px;
+        border: 1px solid #CCC;
+        border-radius: 15px;
+        background: #131212;
+      }
+      
+      .carousel img {
+        width: 350px;
+        height: 390px;
+        /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+        display: block;
+        border-radius: 1vw;
+      }
+      
+      .arrow {
+        position: absolute;
+        top: 220px;
+        padding: 0;
+        background: #ddd;
+        border-radius: 15px;
+        border: 1px solid gray;
+        font-size: 24px;
+        line-height: 24px;
+        color: #444;
+        display: block;
+      }
+      
+      .arrow:focus {
+        outline: none;
+      }
+      
+      .arrow:hover {
+        background: #ccc;
+        cursor: pointer;
+      }
+      
+      .prev {
+        left: 7px;
+      }
+      
+      .next {
+        right: 7px;
+      }
+      
+      .gallery {
+        width: 100%;
+        overflow: hidden;
+      }
+      
+      .gallery ul {
+        height: 480px;
+        width: 9999px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        transition: margin-left 250ms;
+        /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+        /* http://davidwalsh.name/remove-whitespace-inline-block */
+        font-size: 0;
+      }
+      
+      .gallery li {
+        display: inline-block;
+        margin: 1vw;
+}

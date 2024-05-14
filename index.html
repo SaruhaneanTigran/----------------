@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content=“Десятая_лабораторная“ />
+    <meta name="keywords" content=“HTML“ />
+    <meta name="author" content=“Саруханян_Тигран_Артурович“ />
+    <link rel="shortcut icon" href="Images/im3.png">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <script src="JS/JS.js"> </script>
+    <title>Detail GARAGE</title>
+</head>
+<body onload="mesaj();">
+
+
+    <div class="meniu">
+        <div class="imageBox" style="color: red;"> <a href="index.html"> <img src="Images/logo.png"> </a> </div>
+
+        <ul>
+            <li style="color: red;"> <a href="HTML/produs.html"> О нас</a> </li>
+            <li class="btn"> <a href="HTML/client.html">Услуги</a> </li>
+            <li class="btn"> <a href="HTML/contacts.html"> Контакты </a></li>
+            <li class="btn"> <a target="_blank" href="HTML/map.html">Карта проезда</a></li>
+        </ul>
+    </div>
+    <div class="video"> <video autoplay muted> <source src="Video/Обклейка x5 2019 защитной пленкой.mp4"> </video> </div>
+
+    <div class="container">
+
+ 
+        <div id="carousel" class="carousel">
+            <button class="arrow prev">⇦</button>
+            <div class="gallery">
+              <ul>
+                <li><img src="./Images/1.jpeg"></li>
+                <li><img src="./Images/2.jpeg"></li>
+                <li><img src="./Images/3.jpeg"></li>
+                <li><img src="./Images/10.jpeg"></li>
+                <li><img src="./Images/5.jpeg"></li>
+                <li><img src="./Images/6.jpeg"></li>
+                <li><img src="./Images/7.jpeg"></li>
+                <li><img src="./Images/8.jpeg"></li>
+                <li><img src="./Images/21.jpeg"></li>
+              </ul>
+            </div>
+            <button class="arrow next">⇨</button>
+        </div>
+        <div class="left"> 
+            
+            <p style="size: inherit;color: rgb(78, 78, 78);">DETAIL GARAGE </p>
+            <h2>Самый известный<br>детейлинг центр<br>Молдовы. </h2>
+            
+            <h6 style="color: rgb(203, 202, 202);"> Начиная с 2012 года, компания занимает лидирующую<br> позицию в сфере профессионального и качественного ухода за<br>автомобилями в Р.Молдова.</h6>
+
+        </div>
+
+        <div class="right"> </div>
+     
+        
+          
+    </div>
+
+
+</body>
+<script>
+    /* этот код помечает картинки, для удобства разработки */
+    let i = 1;
+    for(let li of carousel.querySelectorAll('li')) {
+      li.style.position = 'relative';
+      li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
+      i++;
+    }
+
+    /* конфигурация */
+    let width = 390; // ширина картинки
+    let count = 3; // видимое количество изображений
+
+    let list = carousel.querySelector('ul');
+    let listElems = carousel.querySelectorAll('li');
+
+    let position = 0; // положение ленты прокрутки
+
+    carousel.querySelector('.prev').onclick = function() {
+      // сдвиг влево
+      position += width * count;
+      // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+      position = Math.min(position, 0)
+      list.style.marginLeft = position + 'px';
+    };
+
+    carousel.querySelector('.next').onclick = function() {
+      // сдвиг вправо
+      position -= width * count;
+      // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+      position = Math.max(position, -width * (listElems.length - count));
+      list.style.marginLeft = position + 'px';
+    };
+  </script>
+</html>
