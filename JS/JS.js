@@ -1,8 +1,4 @@
 
-function mesaj()
-{
-    // alert("Добро пожаловать на наш сайт!");
-}
 
 //Валидация формы
     function validateForm() {
