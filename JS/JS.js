@@ -142,6 +142,14 @@
 
 
 
+    document.addEventListener('DOMContentLoaded', function() {
+        var birthdateInput = document.getElementById('birthdate');
+        var today = new Date();
+        var minAge = 18;
+        var minDate = new Date(today.getFullYear() - minAge, today.getMonth(), today.getDate());
+        birthdateInput.setAttribute('max', minDate.toISOString().split('T')[0]);
+    });
+
 
 
 
