@@ -50,8 +50,8 @@
 
             <fieldset> 
                 <legend> Регистрация на предзапись  </legend>
-                <p> Имя: <br> <input type="text" name="Имя" pattern="[A-Za-zА-Яа-яЁё]+$" > </p> 
-                <p> Фамилия: <br> <input type="text" name="Фамилия" pattern="^[A-Za-zА-Яа-яЁё]+$" > </p>
+                <p> Имя: <br> <input type="text" name="Имя" pattern="[A-Za-zА-Яа-яЁё]+$" title="Пожалуйста, вводите только буквы." > </p> 
+                <p> Фамилия: <br> <input type="text" name="Фамилия" pattern="^[A-Za-zА-Яа-яЁё]+$" title="Пожалуйста, вводите только буквы." > </p>
                 <p> Адрес электронной почты: <br>  <input type="email" name="Почта"  > </p>
                 <p> Дата рождения: <br> <input type="date" name="Дата рождения"  min="1999-12-31"  required> </p>
                 <p> Местожительство: <br> <select id="selectCity" name="Местожительство" required>
@@ -60,7 +60,7 @@
                     
                     <br>
                 </select>  </p>
-                <p> Телефон: <br> <input type="tel" name="Телефон" pattern="0[0-9]{8}"> <br><br>
+                <p> Телефон: <br> <input type="tel" name="Телефон" pattern="0[0-9]{8}" title="Телефон должен начинаться с 0 и содержать 8 цифр."> <br><br>
                 <input class="buton" type="reset" value="Стереть данные"> <input class="buton" type="submit" value="Отправить данные"> 
             </fieldset>  
         
