@@ -190,6 +190,7 @@ p       {
         height: 600px;
         background-image: url('../Images/10.jpeg');
         background-size: cover;
+        background-repeat: no-repeat;
         
 }
 
